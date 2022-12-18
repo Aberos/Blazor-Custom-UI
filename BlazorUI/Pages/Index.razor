@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+<div class="container-fluid">
+    <h1>Blazor UI</h1>
+    <div class="row">
+        <div class="col-12 form-group">
+            <label><strong>Input CPF</strong></label>
+            <InputCPF @bind-Value="_value" />
+            <label>valor variavel: @_value</label>
+        </div>
+    </div>
+</div>
+
+@code{
+    private string _value;
+}

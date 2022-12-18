@@ -1,0 +1,4 @@
+﻿@using System.Text.RegularExpressions
+@inherits InputComponentBase<string>
+
+<input type="text" @bind-value="FormattedValue" @bind-value:event="oninput" class="form-control" />
